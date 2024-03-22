@@ -276,13 +276,13 @@
                 
                             <div class="it-student-regiform">
                                 <h4 class="it-student-regiform-title" style="color: brown;">Student Details</h4>
-                                <form action="#">
+                                <!-- <form action="#">
                                     <div class="it-student-regiform-wrap">
                                         <div class="row">
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Student Name *</label>
-                                                    <input type="text">
+                                                    <input type="text" id="name">
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
@@ -356,7 +356,7 @@
                                                 <div class="it-student-regiform-item">
                                                     <label>Stream(Admission Opted For)*</label>
                                                     <div class="postbox__select">
-                                                        <select id="stram">
+                                                        <select id="stream">
                                                             <option>Select an option</option>
                                                             <option>CBSE</option>
                                                             <option>State Board</option>
@@ -498,13 +498,13 @@
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Contact Mobile No *</label>
-                                                    <input type="text" id="">
+                                                    <input type="text" id="pcontactno">
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Contact Email-Id </label>
-                                                    <input type="text">
+                                                    <input type="text"id="pemail">
                                                 </div>
                                             </div>
 
@@ -516,56 +516,390 @@
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Father Name *</label>
-                                                    <input type="text">
+                                                    <input type="text" id="fathername">
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Father Qualification *</label>
-                                                    <input type="text">
+                                                    <input type="text" id="fquali">
                                          
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Father Occupation *</label>
-                                                    <input type="text">
+                                                    <input type="text" id="foccup">
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Father Mobile-No * </label>
-                                                    <input type="text">
+                                                    <input type="text" id="fphone">
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Father Email-Id  </label>
-                                                    <input type="text">
+                                                    <input type="text" id="femail">
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Mother Name * </label>
-                                                    <input type="text">
+                                                    <input type="text" id="mname">
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Mother Qualification * </label>
-                                                    <input type="text">
+                                                    <input type="text" id="mquali">
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Mother Occupation * </label>
-                                                    <input type="text">
+                                                    <input type="text" id="moccup">
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="it-student-regiform-item">
                                                     <label>Mother Mobile-No * </label>
+                                                    <input type="text" id="mphone">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Mother Email-Id </label>
+                                                    <input type="text" id="memail">
+                                                </div>
+                                            </div>
+
+
+                                      
+                                         
+                                        </div>
+                                    
+                                  
+                                        <div class="col-xl-12">
+                                            <div class="it-instructor-wrap">
+                                                <div class="it-signup-agree">
+                                                    <h4 class="it-student-subtitle mt-50" style="color: brown;">Note *</h4>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label mt-15" for="flexCheckDefault">
+                                                            I/We hereby declare that the information furnished on this Application form is correct to the best of my/our knowledge and belief.
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                          
+                                        <div class="it-student-regiform-btn">
+                                            <button class="it-btn">
+                                                <span>
+                                                    Register
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form> -->
+                                <form action="https://api.web3forms.com/submit" id="registrationform" method="POST">
+                                    <input type="hidden" name="access_key" value="3f62e24a-9c57-4054-a13f-59596dd6ff44">
+                                    <div class="it-student-regiform-wrap">
+                                        <div class="row">
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Student Name *</label>
+                                                    <input type="text" id="inputname">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Gender *</label>
+                                                    <div class="postbox__select">
+                                                        <select id="inputgender">
+                                                            <option>Select an option</option>
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Date of birth *</label>
+                                                    <input type="date" id="inputdate">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Community *</label>
+                                                    <div class="postbox__select">
+                                                        <select id="inputcommunity">
+                                                            <option>Select an option</option>
+                                                            <option value="GEN">GEN</option>
+                                                            <option value="BC">BC</option>
+                                                            <option value="BCM">BCM</option>
+                                                            <option value="MBC">MBC</option>
+                                                            <option value="DNC">DNC</option>
+                                                            <option value="SC">SC</option>
+                                                            <option value="ST">ST</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Nationality *</label>
+                                                    <input type="text" id="inputnationality">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Registration Class *</label>
+                                                    <div class="postbox__select">
+                                                        <select id="inputclass">
+                                                            <option>Select an option</option>
+                                                            <option value="PRE-KG">PRE-KG</option>
+                                                            <option value="LKG">LKG</option>
+                                                            <option value="UKG">UKG</option>
+                                                            <option value="I">I</option>
+                                                            <option value="2">II</option>
+                                                            <option value="II">III</option>
+                                                            <option value="IV">IV</option>
+                                                            <option value="V">V</option>
+                                                            <option value="VI">VI</option>
+                                                            <option value="VII">VII</option>
+                                                            <option value="VIII">VIII</option>
+                                                            <option value="IX">IX</option>
+                                                            <option value="X">X</option>
+                                                            <option value="XI">XI</option>
+                                                            <option value="XII">XII</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item" >
+                                                    <label>Stream(Admission Opted For)*</label>
+                                                    <div class="postbox__select">
+                                                        <select id="inputoption">
+                                                            <option>Select an option</option>
+                                                            <option>CBSE</option>
+                                                            <option>State Board</option>
+                                                            <option>Matriculation</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>How Do You Know About PVB? * </label>
+                                                    <div class= "postbox__select" >
+                                                        <select id="inputsocial media">
+                                                            <option value="Select Option">Select an option</option>
+                                                            <option value="TV">TV</option>
+                                                            <option value="News Papers">News Papers</option>
+                                                            <option value="Sibling Reference">Sibling Reference</option>
+                                                            <option value="Website">Website</option>
+                                                            <option value="Social Media">Social Media</option>
+                                                            <option value="Others">Others</option>
+                                                            <option value="School Banners">School Banners</option>
+                                                            <option value="Friends & Relatives">Friends & Relatives</option>
+                                                            <option value="Staff Reference">Staff Reference</option>
+                                                            <option value="Parent Reference">Parent Reference</option>
+                                                            <option value="Admission Campaign">Admission Campaign</option>
+               
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <h4 class="it-student-regiform-title mt-30" style="color: brown;">Communication Address</h4>
+
+                                            <div class="col-xl-4">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Address *</label>
+                                                    <input type="text" id="inputaddress">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="it-student-regiform-item">
+                                                    <label>City *</label>
+                                                    <input type="text" id="inputcity">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="it-student-regiform-item">
+                                                    <label>State *</label>
+                                                    <input type="text" id="inputstate">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Pincode *</label>
+                                                    <input type="text" id="inputpincode">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Landline No </label>
+                                                    <input type="text" id="inputlandline">
+                                                </div>
+                                            </div>
+
+                                            <h4 class="it-student-regiform-title mt-30" style="color: brown;">Previous School Details</h4>
+
+                                            <div class="col-xl-4">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Name of the school *</label>
+                                                    <input type="text" id="inputschool">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Board of Study</label>
+                                                    <div class="postbox__select">
+                                                        <select >
+                                                            <option value="">Select an option</option>
+                                                            <option value="CBSE">CBSE</option>
+                                                            <option value="State Board">State Board</option>
+                                                            <option value="Matriculation">Matriculation</option>
+                                                            <option value="ICSE">ICSE</option>
+                                                            <option value="Anglo Indian">Anglo Indian</option>
+                                                           <option value="Other Matric">Other Matric</option>
+               
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Address </label>
                                                     <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="it-student-regiform-item">
+                                                    <label>City </label>
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="it-student-regiform-item">
+                                                    <label>State </label>
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Pincode </label>
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+
+                                            <h4 class="it-student-regiform-title mt-30" style="color: brown;">Contact Details</h4>
+
+                                            
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Parent Type *</label>
+                                                    <div class="postbox__select">
+                                                        <select id="inputparent">
+                                                            <option value="">Select an option</option>
+                                                            <option value="Father">Father</option>
+                                                            <option value="Mother">Mother</option>
+                                                            <option value="Guardian">Guardian</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Contact Name *</label>
+                                                    <input type="text" id="contactname">
+                                         
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Contact Mobile No *</label>
+                                                    <input type="text" id="contact mobile">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3"id="emailid">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Contact Email-Id </label>
+                                                    <input type="text" id="contact email">
+                                                </div>
+                                            </div>
+
+
+                                            
+                                            <h4 class="it-student-regiform-title mt-30" style="color: brown;">Parent Details</h4>
+
+                                            
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Father Name *</label>
+                                                    <input type="text" id="fathername">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Father Qualification *</label>
+                                                    <input type="text" id="qualification">
+                                         
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Father Occupation *</label>
+                                                    <input type="text" id="occupation">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Father Mobile-No * </label>
+                                                    <input type="text" id="fatherno">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Father Email-Id  </label>
+                                                    <input type="text" id="fatheremail">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Mother Name * </label>
+                                                    <input type="text" id="mothername">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Mother Qualification * </label>
+                                                    <input type="text" id="motherqualification">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Mother Occupation * </label>
+                                                    <input type="text" id="motheroccupation">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <div class="it-student-regiform-item">
+                                                    <label>Mother Mobile-No * </label>
+                                                    <input type="text" id="motherno">
                                                 </div>
                                             </div>
                                             <div class="col-xl-3">
@@ -600,8 +934,8 @@
 
 
                           
-                                        <div class="it-student-regiform-btn">
-                                            <button class="it-btn">
+                                        <div class="it-student-regiform-btn" >
+                                            <button type="submit" class="btn black-bg default-btn" style="color:antiquewhite;background-color:brown;" id="mybtn" disabled >
                                                 <span>
                                                     Register
                                                 </span>
@@ -650,158 +984,235 @@
 
     </main>
     <footer>
-
-        <div class="it-footer-area it-footer-bg it-footer-style-5 black-bg pb-70"
-            data-background="assets/img/footer/bg-1-1.jpg">
-            <div class="it-footer-border">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-4">
-                            <div class="it-footer-top-info d-flex align-items-center it-footer-top-col-1">
-                                <div class="it-footer-top-icon">
-                                    <span><i class="fa-light fa-location-dot"></i></span>
-                                </div>
-                                <div class="it-footer-top-text">
-                                    <span>Address:</span>
-                                    <a href="#">NH 49, Kochi-Madurai-Tondi Point Rd, Tamilnadu-625582</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4">
-                            <div class="it-footer-top-info d-flex align-items-center it-footer-top-col-2">
-                                <div class="it-footer-top-icon">
-                                    <span><i class="fa-light fa-phone phone"></i></span>
-                                </div>
-                                <div class="it-footer-top-text">
-                                    <span>Phone:</span>
-                                    <a href="tel:98432 73855">98432 73855
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4">
-                            <div
-                                class="it-footer-top-info d-flex align-items-center justify-content-md-end border-none it-footer-top-col-3">
-                                <div class="it-footer-top-icon">
-                                    <span><i class="fa-light fa-envelope"></i></span>
-                                </div>
-                                <div class="it-footer-top-text">
-                                    <span>Email:</span>
-                                    <a href="mailto:purnavidyabhavan@gmail.com">purnavidyabhavan@gmail.com
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div
+          class="it-footer-area it-footer-bg  pt-120 pb-70"  data-background="assets/img/footer/bg-1-1.jpg"
+         
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-50">
+                <div class="it-footer-widget footer-col-1">
+                  <div class="it-footer-logo pb-25">
+                    <a href="index.html"
+                      ><img src="assets/img/logo/logo-yellow.png" alt
+                    /></a>
+                  </div>
+                  <div class="it-footer-text pb-5">
+                    <p class="text">
+                      Connect with Purna Vidya Bhavan
+                      Thank you for considering Purna Vidya Bhavan for your educational journey. Explore the possibilities and get in touch with us
+                    </p>
+                  </div>
+                  <div class="it-footer-social">
+                    <a href="https://www.facebook.com/purnavidyabhavan"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/purnavidyabhavan/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@pvbcbse7279"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/9843273855"><i class="fab fa-whatsapp"></i></a>
+                    
+                  </div>
                 </div>
-            </div>
-            <div class="it-footer-wrap pt-120">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-50">
-                            <div class="it-footer-widget footer-col-5">
-                                <div class="it-footer-logo pb-25">
-                                    <a href="https://ordainit.com/"><img src="assets/img/logo/logo-1.png" alt></a>
-                                </div>
-                                <div class="it-footer-text pb-5">
-                                    <p style="text-align: justify; padding-right: 10%;">Thank you for considering Purna
-                                        Vidya Bhavan. We are here to assist you with any inquiries or information you
-                                        may need. Feel free to reach out to us through the following channels.</p>
-                                </div>
-                                 <div class="it-footer-social">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-</div>      
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 mb-50">
-                            <div class="it-footer-widget footer-col-6">
-                                <h4 class="it-footer-title">Our Links:</h4>
-                                <div class="it-footer-list">
-                                    <ul>
-                                        <li><a href="#"><i class="fa-regular fa-angle-right"></i>Home</a>
-                                        </li>
-                                        <li><a href="#"><i class="fa-regular fa-angle-right"></i>About us</a></li>
-                                        <li><a href="#"><i class="fa-regular fa-angle-right"></i>Curriculum</a></li>
-                                        <li><a href="#"><i class="fa-regular fa-angle-right"></i>Mandatory
-                                                Disclosure</a>
-                                        </li>
-
-                                        <li><a href="#"><i class="fa-regular fa-angle-right"></i>Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50">
-                            <div class="it-footer-widget footer-col-4">
-                                <h4 class="it-footer-title">Gallery</h4>
-                                <div class="it-footer-gallery-box">
-                                    <div class="row gx-5">
-                                        <div class="col-md-4 col-4">
-                                            <div class="it-footer-thumb mb-10">
-                                                <img src="assets/img/footer/thumb-1-1.png" alt>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-4">
-                                            <div class="it-footer-thumb mb-10">
-                                                <img src="assets/img/footer/thumb-1-2.png" alt>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-4 mb-10">
-                                            <div class="it-footer-thumb">
-                                                <img src="assets/img/footer/thumb-1-3.png" alt>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-4">
-                                            <div class="it-footer-thumb">
-                                                <img src="assets/img/footer/thumb-1-4.png" alt>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-4">
-                                            <div class="it-footer-thumb">
-                                                <img src="assets/img/footer/thumb-1-5.png" alt>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-4">
-                                            <div class="it-footer-thumb">
-                                                <img src="assets/img/footer/thumb-1-6.png" alt>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-8 mb-50">
-                            <div class="it-footer-widget footer-col-8">
-                                <h4 class="it-footer-title">Subscribe</h4>
-                                <div class="it-footer-input-box p-relative">
-                                    <input class="mb-20" type="email" placeholder="Enter your email:">
-                                    <button class="it-btn-white sky-bg"><span>SUBSCRIBE NOW</span></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50">
+                <div class="it-footer-widget footer-col-2">
+                  <h4 class="it-footer-title">infrastructure</h4>
+                  <div class="it-footer-list">
+                    <ul>
+                      <!-- <li>
+                        <a href="#"
+                          ><i class="fa-regular fa-angle-right"></i></a
+                        >
+                      </li> -->
+                      <li>
+                        <a href="lab-facilities.html"
+                          ><i class="fa-regular fa-angle-right"></i>Lab Facilities</a
+                        >
+                      </li>
+                      <li>
+                        <a href="sports.html"
+                          ><i class="fa-regular fa-angle-right"></i>Sports</a
+                        >
+                      </li>
+                      
+                      <li>
+                        <a href="special-feature.html"
+                          ><i class="fa-regular fa-angle-right"></i>special Feature</a
+                        >
+                      </li>
+                      <li>
+                        <a href="events.html"
+                          ><i class="fa-regular fa-angle-right"></i>Events</a
+                        >
+                      </li>
+                      <!-- <li>
+                        <a href="#"
+                          ><i class="fa-regular fa-angle-right"></i>Blog News</a
+                        >
+                      </li> -->
+                    </ul>
+                  </div>
                 </div>
+              </div> 
+              <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 mb-50">
+                <div class="it-footer-widget footer-col-3">
+                  <h4 class="it-footer-title">quick links</h4>
+                  <div class="it-footer-list">
+                    <ul>
+                      <li>
+                        <a href="about-us.html"
+                          ><i class="fa-regular fa-angle-right"></i>About Us</a
+                        >
+                      </li>
+                      
+                      <li>
+                        <a href="contact-us.html"
+                          ><i class="fa-regular fa-angle-right"></i
+                          >Contact Us</a
+                        >
+                      </li>
+                      <li>
+                        <a href="terms-and-conditions.html"
+                          ><i class="fa-regular fa-angle-right"></i>Terms & Conditions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="privacy-policy.html"
+                          ><i class="fa-regular fa-angle-right"></i>privacy 
+                          policy</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50">
+                <div class="it-footer-widget footer-col-4">
+                  <a href="gallery.html"><h4 class="it-footer-title">Gallery</h4></a>
+                  <div class="it-footer-gallery-box">
+                    <div class="row gx-5">
+                      <div class="col-md-4 col-4">
+                        <div class="it-footer-thumb mb-10">
+                         <a href="gallery.html"> <img src="assets/img/footer/1.jpg" alt /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-4">
+                        <div class="it-footer-thumb mb-10">
+                          <a href="gallery.html"><img src="assets/img/footer/2.jpg" alt /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-4 mb-10">
+                        <div class="it-footer-thumb">
+                          <a href="gallery.html"><img src="assets/img/footer/3.jpg" alt /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-4">
+                        <div class="it-footer-thumb">
+                         <a href="gallery.html"> <img src="assets/img/footer/4.jpg" alt /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-4">
+                        <div class="it-footer-thumb">
+                          <a href="gallery.html"><img src="assets/img/footer/5.jpg" alt /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-4">
+                        <div class="it-footer-thumb">
+                          <a href="gallery.html"><img src="assets/img/footer/6.jpg" alt /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
-
+  
         <div class="it-copyright-area it-copyright-height">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
-                        <div class="it-copyright-text text-center">
-                            <p>Copyright © 2024 <a href="https://nearlooks.com/">Nearlook </a> Mart Pvt Ltd.
-                            </p>
-                        </div>
-                    </div>
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-12 wow itfadeUp"
+                data-wow-duration=".9s"
+                data-wow-delay=".3s"
+              >
+                <div class="it-copyright-text text-center">
+                  <p>
+                    Copyright © 2024 <a href="https://www.nearlooks.com/">Nearlook </a> Mart Pvt Ltd.
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </footer>
+    <script>
+        var form = document.getElementById("registrationform");
+            var btn = document.getElementById('mybtn');
+            var inputname = document.getElementById('inputname');
+            var inputgender = document.getElementById('inputgender');
+            var inputdate= document.getElementById('inputdate');
+            var inputcommunity = document.getElementById('inputcommunity');
+            var inputnationality = document.getElementById('inputnationality');
+            var inputclass = document.getElementById('inputclass');
+            var inputoption = document.getElementById('inputoption');
+            var inputsocial = document.getElementById('inputsocial media');
+            var inputaddress = document.getElementById('inputaddress');
+            var inputcity= document.getElementById('inputcity');
+            var inputstate=document.getElementById('inputstate');
+            var inputpincode=document.getElementById('inputpincode');           
+            var inputschool=document.getElementById('inputschool');
+            var inputparent=document.getElementById('inputparent');
+            var contactname=document.getElementById('contactname');
+            var contactmobile=document.getElementById('contact mobile');
+            var fathername=document.getElementById('fathername');
+            var qualification=document.getElementById('qualification');
+            var occupation=document.getElementById('occupation');
+            var fatherno=document.getElementById('fatherno');
+            var mothername=document.getElementById('mothername');
+            var motherqualification=document.getElementById('motherqualification');
+            var motheroccupation=document.getElementById('motheroccupation');
+            var motherno=document.getElementById('motherno');
+    
+    
+            inputname.addEventListener('input', disableBtn); 
+            inputgender.addEventListener('input', disableBtn);
+            inputdate.addEventListener('input', disableBtn);
+            inputcommunity.addEventListener('input', disableBtn);
+            inputnationality.addEventListener('input', disableBtn);
+            inputclass.addEventListener('input', disableBtn);
+            inputoption.addEventListener('input', disableBtn);
+            inputsocial.addEventListener('input', disableBtn);
+            inputaddress.addEventListener('input', disableBtn);
+            inputcity.addEventListener('input', disableBtn);
+            inputstate.addEventListener('input', disableBtn);
+            inputpincode.addEventListener('input', disableBtn);   
+            inputschool.addEventListener('input', disableBtn);
+            inputparent.addEventListener('input', disableBtn);
+            contactname.addEventListener('input', disableBtn);
+            contactmobile.addEventListener('input', disableBtn);
 
-    </footer>
+            fathername.addEventListener('input', disableBtn);
+            qualification.addEventListener('input', disableBtn);
+            occupation.addEventListener('input', disableBtn);
+            fatherno.addEventListener('input', disableBtn);
+            mothername.addEventListener('input', disableBtn);
+            motherqualification.addEventListener('input', disableBtn);
+            motheroccupation.addEventListener('input', disableBtn);
+            motherno.addEventListener('input', disableBtn);
+    
+            function disableBtn() {
+                if (inputname.value &&inputgender.value &&inputdate.value&&inputcommunity.value &&
+                    inputnationality.value && inputclass.value && inputoption.value && inputsocial.value && inputaddress.value&&inputcity.value && inputstate.value && inputpincode.value &&
+                    inputschool.value && inputparent.value && contactname.value&&contactmobile.value && fathername.value 
+                     &&qualification.value &&occupation.value &&fatherno.value && mothername.value && motherqualification.value && motheroccupation.value && motherno.value) {
+                        btn.disabled = false;
+                    } else {
+                        btn.disabled = true;
+                    }
+                }
+    </script>
+
+    
 
     <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery.js"></script>
