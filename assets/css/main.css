@@ -3011,10 +3011,10 @@ only screen and (min-width:768px) and (max-width:991px),
 }
 
 .it-header-2-main-menu ul li>a {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     transition: .3s;
-    padding: 21px 0;
+    padding: 3px 0;
     display: inline-block;
     text-transform: capitalize;
     font-family: var(--it-ff-heading);
@@ -3561,15 +3561,15 @@ only screen and (min-width:768px) and (max-width:991px),
 
 .it-slider-bg .it-hero-2-play a {
     color: var(--it-common-black);
-    background-color: var(--it-common-white)
+    background-color:  #2b65364f;
 }
 
 .it-slider-bg .it-hero-2-play a::before {
-    border: 1px solid rgba(255, 255, 255, .384)
+    border: 1px solid rgba(184, 98, 98, 0.384)
 }
 
 .it-slider-bg .it-hero-2-play a::after {
-    background-color: rgba(255, 255, 255, .384)
+    background-color: rgba(165, 39, 39, 0.384)
 }
 
 .it-slider-overlay {
@@ -3833,7 +3833,7 @@ only screen and (min-width:768px) and (max-width:991px) {
 
 .it-hero-2-title {
     color: var(--it-common-black);
-    font-size: 60px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 74px;
     line-height: 1.2;
@@ -5287,23 +5287,20 @@ only screen and (min-width:768px) and (max-width:991px),
 }
 
 .it-about-thumb-box {
-    margin-right: 80px;
-    display: flex;
-    flex-direction: column;
+    margin-right: 80px
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px),
 only screen and (min-width:768px) and (max-width:991px),
 (max-width:767px) {
     .it-about-thumb-box {
-        margin-right:0;
-        
+        margin-right: 0
     }
 }
 
 .it-about-thumb-1 {
     position: absolute;
-    top: 55px;
+    top: -55px;
     left: 0;
     
 }
@@ -5548,7 +5545,7 @@ only screen and (min-width:992px) and (max-width:1199px) {
 }
 
 .it-about-2-icon span {
-    color: var(--it-common-black);
+    color: black;
     font-family: var(--it-ff-heading);
     font-size: 18px;
     font-weight: 600;
@@ -14339,4 +14336,13 @@ only screen and (min-width:768px) and (max-width:991px),
     .header-left ul li a {
         font-size: 14px
     }
+}
+.title{
+    color:var(--it-theme-1);
+    font-weight: 800;
+    text-align: center;
+}
+.color{
+    color:var(--it-theme-1);
+    font-weight: 600;
 }
